@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0621.1547                               -->
+<workbook source-build='2019.2.1 (20192.19.0621.1547)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train_final_clean_df' inline='true' name='federated.1mu97v00qdlph2101reog16n1lo2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train_final_clean_df' name='textscan.0umrozg0iizoid124diuc091jb91'>
+            <connection class='textscan' directory='C:/Users/Monika/Desktop/kkbox' filename='train_final_clean_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0umrozg0iizoid124diuc091jb91' name='train_final_clean_df.csv' table='[train_final_clean_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='source_system_tab' ordinal='0' />
+            <column datatype='string' name='source_screen_name' ordinal='1' />
+            <column datatype='string' name='source_type' ordinal='2' />
+            <column datatype='real' name='song_length' ordinal='3' />
+            <column datatype='integer' name='genre_ids' ordinal='4' />
+            <column datatype='string' name='artist_name' ordinal='5' />
+            <column datatype='string' name='composer' ordinal='6' />
+            <column datatype='real' name='language' ordinal='7' />
+            <column datatype='integer' name='city' ordinal='8' />
+            <column datatype='integer' name='age' ordinal='9' />
+            <column datatype='string' name='gender' ordinal='10' />
+            <column datatype='integer' name='registered_via' ordinal='11' />
+            <column datatype='integer' name='target' ordinal='12' />
+            <column datatype='integer' name='age_group' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_system_tab</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_system_tab]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>source_system_tab</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_screen_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_screen_name]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>source_screen_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_type]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>source_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>song_length</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[song_length]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>song_length</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre_ids</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[genre_ids]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>genre_ids</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[artist_name]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>artist_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>composer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[composer]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>composer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>language</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[language]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>language</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>registered_via</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[registered_via]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>registered_via</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[train_final_clean_df.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='City' datatype='integer' name='[city]' role='dimension' type='ordinal' />
+      <column caption='Composer' datatype='string' name='[composer]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Genre Ids' datatype='integer' name='[genre_ids]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Language' datatype='real' name='[language]' role='dimension' type='ordinal' />
+      <column caption='Registered Via' datatype='integer' name='[registered_via]' role='measure' type='quantitative' />
+      <column caption='Song Length' datatype='real' name='[song_length]' role='measure' type='quantitative' />
+      <column caption='Source Screen Name' datatype='string' name='[source_screen_name]' role='dimension' type='nominal' />
+      <column caption='Source System Tab' datatype='string' name='[source_system_tab]' role='dimension' type='nominal' />
+      <column caption='Source Type' datatype='string' name='[source_type]' role='dimension' type='nominal' />
+      <column caption='Target' datatype='integer' name='[target]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.513854' measure-ordering='alphabetic' measure-percentage='0.486146' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[age_group]' role='measure' type='quantitative' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[none:age_group:qk]</cols>
+      </table>
+      <simple-id uuid='{A45F1B30-95E0-4E90-BA6D-24A7DAFB41B4}' />
+    </worksheet>
+    <worksheet name='Source System Tab'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[source_system_tab]' derivation='None' name='[none:source_system_tab:nk]' pivot='key' type='nominal' />
+            <column caption='Source System Tab' datatype='string' name='[source_system_tab]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_system_tab:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_system_tab:nk]</cols>
+      </table>
+      <simple-id uuid='{DEE43C68-4F14-4535-A61D-9E8E5C6435C4}' />
+    </worksheet>
+    <worksheet name='Source type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[source_type]' derivation='None' name='[none:source_type:nk]' pivot='key' type='nominal' />
+            <column caption='Source Type' datatype='string' name='[source_type]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_type:nk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</cols>
+      </table>
+      <simple-id uuid='{A13F1EA2-BA1F-4D43-8909-CFBB9394695E}' />
+    </worksheet>
+    <worksheet name='Top10Composer'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Composer' datatype='string' name='[composer]' role='dimension' type='nominal' />
+            <column-instance column='[composer]' derivation='None' name='[none:composer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mu97v00qdlph2101reog16n1lo2].[none:composer:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Number of Records])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:composer:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mu97v00qdlph2101reog16n1lo2].[none:composer:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1mu97v00qdlph2101reog16n1lo2].[none:composer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[none:composer:nk]</cols>
+      </table>
+      <simple-id uuid='{B57E25E1-FCEF-4E5D-854A-E94E5D8FD15A}' />
+    </worksheet>
+    <worksheet name='genderwise records'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column caption='Registered Via' datatype='integer' name='[registered_via]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[registered_via]' derivation='Sum' name='[sum:registered_via:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1mu97v00qdlph2101reog16n1lo2].[none:gender:nk]' />
+              <wedge-size column='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' />
+              <size column='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:registered_via:qk]' />
+              <text column='[federated.1mu97v00qdlph2101reog16n1lo2].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{71CA175D-D573-44EA-9627-A7FCDCF3CFF9}' />
+    </worksheet>
+    <worksheet name='top10SourceScreenName'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[source_screen_name]' derivation='None' name='[none:source_screen_name:nk]' pivot='key' type='nominal' />
+            <column caption='Source Screen Name' datatype='string' name='[source_screen_name]' role='dimension' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_screen_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Number of Records])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:source_screen_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_screen_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_screen_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[none:source_screen_name:nk]</cols>
+      </table>
+      <simple-id uuid='{7A64F156-7799-46E5-BDCC-C849AE9BC2DB}' />
+    </worksheet>
+    <worksheet name='top10artist'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_final_clean_df' name='federated.1mu97v00qdlph2101reog16n1lo2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mu97v00qdlph2101reog16n1lo2'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Artist Name' datatype='string' name='[artist_name]' role='dimension' type='nominal' />
+            <column-instance column='[artist_name]' derivation='None' name='[none:artist_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mu97v00qdlph2101reog16n1lo2].[none:artist_name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Number of Records])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:artist_name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1mu97v00qdlph2101reog16n1lo2].[none:artist_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1mu97v00qdlph2101reog16n1lo2].[none:artist_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1mu97v00qdlph2101reog16n1lo2].[sum:Number of Records:qk]</rows>
+        <cols>[federated.1mu97v00qdlph2101reog16n1lo2].[none:artist_name:nk]</cols>
+      </table>
+      <simple-id uuid='{2C8217AF-31D8-4422-846F-201FADECB107}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='genderwise records'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mu97v00qdlph2101reog16n1lo2].[sum:registered_via:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1mu97v00qdlph2101reog16n1lo2].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8AECD60A-30D2-47EB-A2E9-7CE49120E389}' />
+    </window>
+    <window class='worksheet' name='top10artist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.1mu97v00qdlph2101reog16n1lo2].[none:artist_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84066DB4-3184-466C-9624-BC26D72594C9}' />
+    </window>
+    <window class='worksheet' name='top10SourceScreenName'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{86498A7F-BBD6-4E03-A225-7FCD79728E55}' />
+    </window>
+    <window class='worksheet' name='Source System Tab'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D077E894-2309-4A33-A8E7-F4A950FC3331}' />
+    </window>
+    <window class='worksheet' name='Source type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C4076D3C-C5F8-413B-AB9C-210FF09AD756}' />
+    </window>
+    <window class='worksheet' name='Top10Composer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{562C7FC1-BED7-408D-9C90-C36F495BBE13}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB1DF360-6F32-4FFF-B262-BECDCA881C7C}' />
+    </window>
+  </windows>
+</workbook>
